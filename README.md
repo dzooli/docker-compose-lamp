@@ -92,6 +92,9 @@ This will be used to store Apache logs. The default value for this is `./logs/ap
 _**DATABASE**_
 Define which MySQL or MariaDB Version you would like to use. 
 
+_**MYSQL_CONFIG**_
+Additional MySQL|MariaDB configuration parameters could be in this file.
+
 _**MYSQL_DATA_DIR**_
 
 This is MySQL data directory. The default value for this is `./data/mysql`. All your MySQL data files will be stored here.
