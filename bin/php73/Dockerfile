@@ -18,11 +18,12 @@ RUN apt-get -y update && \
     apt-get -y --no-install-recommends install mysql-client zlib1g-dev libzip-dev libicu-dev && \
     apt-get -y --no-install-recommends install --fix-missing apt-utils build-essential git curl && \ 
     apt-get -y --no-install-recommends install --fix-missing libcurl3 libcurl3-dev zip openssl && \
+    apt-get -y --no-install-recommends install vim-nox mc inetutils-telnet inetutils-ping inetutils-traceroute && \
     rm -rf /var/lib/apt/lists/* && \
     curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 # Install xdebug
-RUN pecl install xdebug-2.7.2 && \
+RUN pecl install xdebug-2.9.4 && \
     docker-php-ext-enable xdebug
 
 # Install redis

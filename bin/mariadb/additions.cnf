@@ -1,0 +1,11 @@
+[mysqld]
+
+max_allowed_packet=100M
+
+innodb_buffer_pool_size=512M
+innodb_buffer_pool_instances=2
+innodb_log_file_size=512M
+innodb_read_io_threads=4
+innodb_write_io_threads=4
+innodb_temp_data_file_path=ibtmp1:32M;ibtmp2:128M:autoextend:max:512M
+

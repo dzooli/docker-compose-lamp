@@ -26,6 +26,7 @@ libicu-dev && \
 build-essential \
 git \
 curl \
+vim-nox mc inetutils-ping inetutils-telnet inetutils-traceroute \
 libonig-dev && \ 
     apt-get -y --no-install-recommends install --fix-missing libcurl4 \
 libcurl4-openssl-dev \
@@ -35,7 +36,7 @@ openssl && \
     curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 # Install xdebug
-RUN pecl install xdebug-2.8.0 && \
+RUN pecl install xdebug-2.9.4 && \
     docker-php-ext-enable xdebug
 
 # Install redis
