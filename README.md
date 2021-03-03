@@ -63,6 +63,9 @@ Is used to specify which PHP Version you want to use. Defaults always to latest 
 _**PHP_INI**_
 Define your custom `php.ini` modification to meet your requirments. 
 
+_**config/php/php.ini**_
+Set the default timezone for PHP
+
 ---
 #### Apache 
 ---
